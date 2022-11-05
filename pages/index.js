@@ -1,8 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useEffect } from 'react'
 
 export default function Home() {
+
+  useEffect(() => {
+    //redirect to /html/index.html
+    window.location.href = '/html/index.html'
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
