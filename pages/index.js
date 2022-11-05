@@ -13,6 +13,7 @@ export default function Home() {
   }, [])
 
   return (
+    /* merge */
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
