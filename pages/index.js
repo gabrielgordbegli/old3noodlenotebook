@@ -1,16 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 
 export default function Home() {
-  const router = useRouter()
-
-  useEffect(() => {
-    //redirect to /html/index.html using next/router
-    router.push('/html/index.html')
-  }, [])
 
   return (
     <div className={styles.container}>
@@ -22,31 +14,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Noodle Notebook
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="./html/index.html" className={styles.card}>
+            <h2>PDF Merge &rarr;</h2>
+            <p>Merge all your slides and control + f them all at once.</p>
           </a>
 
           <a
@@ -55,9 +29,9 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Playlist Search  &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Search the transcripts of a playlist to find the part of the lecture you need.
             </p>
           </a>
         </div>
