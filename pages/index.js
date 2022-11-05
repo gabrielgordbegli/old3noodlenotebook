@@ -18,22 +18,11 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="./html/index.html" className={styles.card}>
+          <a href="./index.html" className={styles.card}>
             <h2>PDF Merge &rarr;</h2>
             <p>Merge all your slides and control + f them all at once.</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Playlist Search  &rarr;</h2>
-            <p>
-              Search the transcripts of a playlist to find the part of the lecture you need.
-            </p>
-          </a>
         </div>
       </main>
 
