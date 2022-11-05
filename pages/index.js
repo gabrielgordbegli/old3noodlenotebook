@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="." className={styles.card}>
+          <a href="https://nnstopgap.vercel.app/" className={styles.card}>
             <h2>PDF Merge &rarr;</h2>
             <p>Merge all your slides and control + f them all at once.</p>
           </a>
