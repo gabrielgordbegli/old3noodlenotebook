@@ -2,12 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
 
   useEffect(() => {
-    //redirect to /html/index.html
-    window.location.href = '/html/index.html'
+    //redirect to /html/index.html using next/router
+    router.push('/html/index.html')
   }, [])
 
   return (
